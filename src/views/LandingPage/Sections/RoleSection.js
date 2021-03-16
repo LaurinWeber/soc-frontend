@@ -17,12 +17,12 @@ export default function RoleSection(props) {
 
     //redirect to driver inscription
     const handleInscription = async () => {
-        let path = `/inscription-page`;
+
     };
 
     //redirect to details about soc for companies
     const handleDetails = async (event) => {
-        let path = `/details-page`;
+
     };
 
     return (

@@ -1,16 +1,13 @@
-import React, {useState} from 'react';
-import {Formik, Field, Form} from 'formik';
+import React from 'react';
 import emailjs from "emailjs-com";
 
 // A custom validation function. This must return an object
 // which keys are symmetrical to our values/initialValues
 
 import styles from "../../../assets/jss/views/landingPageSections/contactStyle.js";
-import Button from "../../../components/Button.js";
 
 import {makeStyles} from "@material-ui/core/styles";
-import {Grid, TextField} from "@material-ui/core";
-import CardBody from "../../../components/CardBody";
+import {Grid} from "@material-ui/core";
 
 const useStyles = makeStyles(styles);
 
@@ -19,9 +16,6 @@ export default function ContactSection() {
 
     function sendEmail(e) {
         e.preventDefault();
-        let serviceID = process.env.REACT_APP_EMAILJS_SERVICEID
-        let templateID = process.env.REACT_APP_EMAILJS_TEMPLATEIDID
-        let userID = process.env.REACT_APP_EMAILJS_USERID
 
         emailjs.sendForm("service_2x3eajy", "template_rf85yeh", e.target, "user_Kuu8pWYFwfVQ8xffWm1tV")
             .then((result) => {

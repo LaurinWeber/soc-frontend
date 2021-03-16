@@ -4,10 +4,7 @@ import {makeStyles} from "@material-ui/core/styles";
 import classNames from "classnames";
 
 // @material-ui/icons
-import PersonAdd from "@material-ui/icons/PersonAdd";
-import Contract from "@material-ui/icons/Create";
-import Car from "@material-ui/icons/DirectionsCar";
-import Money from "@material-ui/icons/MonetizationOn";
+
 // core components
 import styles from "../assets/jss/views/landingPageStyle";
 import {Grid, AppBar, Toolbar} from "@material-ui/core";

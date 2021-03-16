@@ -1,4 +1,4 @@
-import {cardTitle, grayColor, infoColor, primaryColor, title} from "../../mainStyles";
+import {grayColor, title} from "../../mainStyles";
 
 const contactStyle = {
     section: {
