@@ -41,7 +41,7 @@ export default function LandingPage(props) {
             <Parallax filter>
                 <div className={classes.container}>
                     <Grid container>
-                        <Grid item xs={12} sm={12} md={5}>
+                        <Grid item xs={12} sm={12} md={6}>
                             {/* eslint-disable-next-line react/no-unescaped-entities */}
                             <Typography variant={"h3"}>Besion d'argent?</Typography>
                             <Typography variant={"subtitle1"}>
