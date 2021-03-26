@@ -1,16 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { Router, Route, Switch } from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import LandingPage from "./views/LandingPage";
-import { createBrowserHistory } from "history";
-
-const hist = createBrowserHistory();
+import InscriptionPage from "./views/InscriptionPage";
 
 ReactDOM.render(
-    <Router history={hist}>
+    <Router>
         <Switch>
-            <Route path="/" component={LandingPage} />
+            <Route path="/inscription" component={InscriptionPage} />
+            <Route exact path="/" component={LandingPage} />
         </Switch>
     </Router>,
   document.getElementById('root')

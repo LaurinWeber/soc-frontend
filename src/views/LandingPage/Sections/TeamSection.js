@@ -7,7 +7,7 @@ import {makeStyles} from "@material-ui/core/styles";
 // @material-ui/icons
 
 // core components
-import {Grid} from "@material-ui/core";
+import {Grid, Typography} from "@material-ui/core";
 import Card from "../../../components/Card";
 
 import styles from "../../../assets/jss/views/landingPageSections/teamStyle.js";
@@ -29,71 +29,75 @@ export default function TeamSection() {
     );
     return (
         <div className={classes.section}>
-            <h2 className={classes.title}>Connaître l'équipe</h2>
-
+            <Typography variant={'h4'} className={classes.title}>Connaître l'équipe </Typography>
+            <Typography variant={'body2'} className={classes.description}>
+                Nous somme des étudiants de l'Hes-so Valais / Wallis.
+            </Typography>
             <div>
-                <Grid container>
-                    <Grid item xs={12} sm={12} md={4}>
-                        <Card plain>
-                            <Grid item xs={12} sm={12} md={6} className={classes.itemGrid}>
-                                <img src={laurin} alt="..." className={imageClasses}/>
-                            </Grid>
-                            <h4 className={classes.cardTitle}>
-                                Laurin Weber
-                                <br/>
-                                <small className={classes.smallTitle}>Developer</small>
-                            </h4>
-                        </Card>
+                <Typography>
+                    <Grid container>
+                        <Grid item xs={12} sm={12} md={4}>
+                            <Card plain>
+                                <Grid item xs={8} sm={8} md={6} className={classes.itemGrid}>
+                                    <img src={laurin} alt="..." className={imageClasses}/>
+                                </Grid>
+                                <h4 className={classes.cardTitle}>
+                                    Laurin Weber
+                                    <br/>
+                                    <small className={classes.smallTitle}>Informatique</small>
+                                </h4>
+                            </Card>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={4}>
+                            <Card plain>
+                                <Grid item xs={8} sm={8} md={6} className={classes.itemGrid}>
+                                    <img src={kevin} alt="..." className={imageClasses}/>
+                                </Grid>
+                                <h4 className={classes.cardTitle}>
+                                    Kevin Kobler
+                                    <br/>
+                                    <small className={classes.smallTitle}>Tourism</small>
+                                </h4>
+                            </Card>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={4}>
+                            <Card plain>
+                                <Grid item xs={8} sm={8} md={6} className={classes.itemGrid}>
+                                    <img src={celine} alt="..." className={imageClasses}/>
+                                </Grid>
+                                <h4 className={classes.cardTitle}>
+                                    Céline Gex
+                                    <br/>
+                                    <small className={classes.smallTitle}>Économie</small>
+                                </h4>
+                            </Card>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={4}>
+                            <Card plain>
+                                <Grid item xs={8} sm={8} md={6} className={classes.itemGrid}>
+                                    <img src={maxime} alt="..." className={imageClasses}/>
+                                </Grid>
+                                <h4 className={classes.cardTitle}>
+                                    Maxime Georges
+                                    <br/>
+                                    <small className={classes.smallTitle}>Économie</small>
+                                </h4>
+                            </Card>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={4}>
+                            <Card plain>
+                                <Grid item xs={8} sm={8} md={6} className={classes.itemGrid}>
+                                    <img src={thomas} alt="..." className={imageClasses}/>
+                                </Grid>
+                                <h4 className={classes.cardTitle}>
+                                    Thomas Berger
+                                    <br/>
+                                    <small className={classes.smallTitle}>Ingenieur</small>
+                                </h4>
+                            </Card>
+                        </Grid>
                     </Grid>
-                    <Grid item xs={12} sm={12} md={4}>
-                        <Card plain>
-                            <Grid item xs={12} sm={12} md={6} className={classes.itemGrid}>
-                                <img src={kevin} alt="..." className={imageClasses}/>
-                            </Grid>
-                            <h4 className={classes.cardTitle}>
-                                Kevin Kobler
-                                <br/>
-                                <small className={classes.smallTitle}>Designer</small>
-                            </h4>
-                        </Card>
-                    </Grid>
-                    <Grid item xs={12} sm={12} md={4}>
-                        <Card plain>
-                            <Grid item xs={12} sm={12} md={6} className={classes.itemGrid}>
-                                <img src={celine} alt="..." className={imageClasses}/>
-                            </Grid>
-                            <h4 className={classes.cardTitle}>
-                                Céline Gex
-                                <br/>
-                                <small className={classes.smallTitle}>Marketing</small>
-                            </h4>
-                        </Card>
-                    </Grid>
-                    <Grid item xs={12} sm={12} md={4}>
-                        <Card plain>
-                            <Grid item xs={12} sm={12} md={6} className={classes.itemGrid}>
-                                <img src={maxime} alt="..." className={imageClasses}/>
-                            </Grid>
-                            <h4 className={classes.cardTitle}>
-                                Maxime Georges
-                                <br/>
-                                <small className={classes.smallTitle}>Résponsable financière</small>
-                            </h4>
-                        </Card>
-                    </Grid>
-                    <Grid item xs={12} sm={12} md={4}>
-                        <Card plain>
-                            <Grid item xs={12} sm={12} md={6} className={classes.itemGrid}>
-                                <img src={thomas} alt="..." className={imageClasses}/>
-                            </Grid>
-                            <h4 className={classes.cardTitle}>
-                                Thomas Berger
-                                <br/>
-                                <small className={classes.smallTitle}>Manager de qualité</small>
-                            </h4>
-                        </Card>
-                    </Grid>
-                </Grid>
+                </Typography>
             </div>
         </div>
     );

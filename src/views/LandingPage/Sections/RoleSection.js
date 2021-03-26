@@ -1,6 +1,6 @@
 import React from "react";
 // material-ui components
-import { makeStyles } from "@material-ui/core/styles";
+import {makeStyles} from "@material-ui/core/styles";
 // core components
 
 import styles from "../../../assets/jss/views/landingPageSections/roleStyle";
@@ -8,17 +8,14 @@ import Card from "../../../components/Card";
 import CardHeader from "../../../components/CardHeader";
 import CardBody from "../../../components/CardBody";
 import Button from "../../../components/Button.js";
-import {Grid} from "@material-ui/core";
+import {Grid, Typography} from "@material-ui/core";
 
 const useStyles = makeStyles(styles);
 
 export default function RoleSection(props) {
     const classes = useStyles();
+    const {handleInscription} = props;
 
-    //redirect to driver inscription
-    const handleInscription = async () => {
-
-    };
 
     //redirect to details about soc for companies
     const handleDetails = async (event) => {
@@ -27,16 +24,17 @@ export default function RoleSection(props) {
 
     return (
         <div className={classes.section}>
+            <Typography>
             <Grid container justify="center">
-                <Grid item xs={6} sm={12} md={6}>
-                    <h2 className={classes.title}>Quelle et ton rôle? </h2>
+                <Grid item xs={12} sm={12} md={8}>
+                    <Typography variant={'h4'} className={classes.title}>Quelle et ton rôle? </Typography>
                 </Grid>
             </Grid>
             <div>
                 <Grid container justify="center">
-                    <Grid item xs={6} sm={12} md={6}>
+                    <Grid item xs={12} sm={12} md={8}>
                         <Card className={classes.textCenter}>
-                            <CardHeader color="info">Conducteur</CardHeader>
+                            <CardHeader color="primary">Conducteur</CardHeader>
                             <CardBody>
                                 <h4 className={classes.cardTitle}>
                                     "Je veux mettre la pub sur ma voiture"
@@ -48,15 +46,15 @@ export default function RoleSection(props) {
                                     proposons pour arrondir tes fins de mois😊 Tu es intéressé?
                                     Inscris-toi et nous te contacterons.
                                 </p>
-                                <Button onClick={handleInscription} disabled color={"danger"}>
+                                <Button onClick={handleInscription} color={"danger"}>
                                     S'inscrire
                                 </Button>
                             </CardBody>
                         </Card>
-                        <br />
+                        <br/>
 
                         <Card className={classes.textCenter}>
-                            <CardHeader color="info">
+                            <CardHeader color="primary">
                                 Entreprises et campagnes publicitaires
                             </CardHeader>
                             <CardBody>
@@ -73,10 +71,11 @@ export default function RoleSection(props) {
                                 </Button>
                             </CardBody>
                         </Card>
-                        <br />
+                        <br/>
                     </Grid>
                 </Grid>
             </div>
+            </Typography>
         </div>
     );
 }

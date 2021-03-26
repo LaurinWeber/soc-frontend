@@ -1,4 +1,5 @@
-import {grayColor, title} from "../../mainStyles";
+import {grayColor, primaryColor, title} from "../../mainStyles";
+
 
 const contactStyle = {
     section: {
@@ -86,8 +87,9 @@ const contactStyle = {
     },
 
     inputControl: {
+        fontSize: '12px',
         width: "60%",
-        border:"0.5px solid #ccc",
+        border: "0.1px solid #ccc",
         borderRadius: "3px"
     },
     inputWrapper: {},
