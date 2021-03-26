@@ -3,8 +3,6 @@ import Button from "../../components/Button";
 import {makeStyles} from "@material-ui/styles";
 import logo from "../../assets/img/logo-soc.png";
 import React from "react";
-import {useHistory} from "react-router-dom";
-
 
 const useStyles = makeStyles({
         button: {
@@ -32,8 +30,6 @@ const useStyles = makeStyles({
 export default function (props) {
     const {goToHome, inscription, showButton, label} = props;
     const classes = useStyles();
-    const history = useHistory();
-
 
     return (
         <AppBar position="sticky">

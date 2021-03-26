@@ -1,7 +1,5 @@
 import React from "react";
 import {makeStyles} from "@material-ui/styles";
-import {Wallpaper} from "@material-ui/icons";
-import {Paper, Typography} from "@material-ui/core";
 import {primaryColor} from "../../assets/jss/mainStyles";
 import logo from "../../assets/img/logo-hes-so-valais-2019.png";
 

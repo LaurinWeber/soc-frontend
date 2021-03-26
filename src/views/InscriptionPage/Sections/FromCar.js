@@ -1,9 +1,5 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Textfield from "@material-ui/core/TextField";
-import Button from "@material-ui/core/Button";
-import {Fab} from "@material-ui/core";
-import AddPhotoAlternateIcon from "@material-ui/icons/AddPhotoAlternate";
-import {container} from "../../../assets/jss/mainStyles";
 import {makeStyles} from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
@@ -20,7 +16,7 @@ const useStyles = makeStyles({
 })
 
 export default function FormCar(props) {
-    const {values, handleChange, addImage} = props;
+    const {values, handleChange} = props;
     const classes = useStyles();
 
     return (
@@ -33,19 +29,21 @@ export default function FormCar(props) {
                 />
                 <br/>
                 <Textfield
+                    label="Modèle"
+                    type="type"
+                    onChange={handleChange("type")}
+                    defaultValue={values.type}
+                />
+                <br/>
+                <Textfield
                     type="year"
                     label="Année"
                     onChange={handleChange("year")}
                     defaultValue={values.year}
                 />
                 <br/>
-                <Textfield
-                    label="Type"
-                    type="type"
-                    onChange={handleChange("type")}
-                    defaultValue={values.type}
-                />
-                <br/>
+
+
                 <Textfield
                     label="Couleur"
                     type="text"

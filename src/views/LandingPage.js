@@ -5,7 +5,7 @@ import classNames from "classnames";
 
 // core components
 import styles from "../assets/jss/views/landingPageStyle";
-import {Grid, AppBar, Toolbar, Typography} from "@material-ui/core";
+import {Grid, Typography} from "@material-ui/core";
 import ProductSection from "./LandingPage/Sections/ProductSection";
 import RoleSection from "./LandingPage/Sections/RoleSection";
 import TeamSection from "./LandingPage/Sections/TeamSection";

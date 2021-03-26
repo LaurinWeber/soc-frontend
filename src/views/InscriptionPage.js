@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Divider, Fab, Grid, Paper, Typography} from "@material-ui/core";
+import {Divider,  Grid, Typography} from "@material-ui/core";
 import FormPerson from "./InscriptionPage/Sections/FromPerson";
 import FormCar from "./InscriptionPage/Sections/FromCar";
 import FormDriving from "./InscriptionPage/Sections/FromDriving";
@@ -14,9 +14,6 @@ import styles from "../assets/jss/views/inscriptionPageStyle";
 import {makeStyles} from "@material-ui/core/styles";
 
 const useStyles = makeStyles(styles);
-
-//id
-let id = 0;
 
 export default function InscriptionPage(props) {
     //hooks
@@ -99,7 +96,7 @@ export default function InscriptionPage(props) {
                     <HeaderTop
                         showButton={false}
                         goToHome={cancel}
-                        label="Details - Personnel"
+                        label="Détails personels"
                     />
                     <div className={classNames(classes.main, classes.mainRaised)}>
                         <Grid className={classes.grid} container>
@@ -156,7 +153,7 @@ export default function InscriptionPage(props) {
                     <HeaderTop
                         showButton={false}
                         goToHome={cancel}
-                        label="Experience conduite"
+                        label="Conduite"
                     />
                     <div className={classNames(classes.main, classes.mainRaised)}>
                         <Grid className={classes.grid} container>
@@ -190,7 +187,7 @@ export default function InscriptionPage(props) {
                         <Grid className={classes.grid} container>
                             <Grid item xs={12} sm={12} md={12}>
                                 <StepperTop step={step}/>
-                                <Typography variant={"h5"}>Person</Typography>
+                                <Typography variant={"h5"}>Details personels</Typography>
                                 <Divider/>
                                 <br/>
                                 <FormPerson
@@ -248,5 +245,7 @@ export default function InscriptionPage(props) {
                     <FooterBottom/>
                 </div>
             );
+        default:
+
     }
 }

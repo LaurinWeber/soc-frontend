@@ -31,7 +31,7 @@ export default function TeamSection() {
         <div className={classes.section}>
             <Typography variant={'h4'} className={classes.title}>Connaître l'équipe </Typography>
             <Typography variant={'body2'} className={classes.description}>
-                Nous somme des étudiants de l'Hes-so Valais / Wallis.
+                Nous somme des étudiants de l'HES-SO Valais / Wallis.
             </Typography>
             <div>
                 <Typography>
@@ -56,7 +56,7 @@ export default function TeamSection() {
                                 <h4 className={classes.cardTitle}>
                                     Kevin Kobler
                                     <br/>
-                                    <small className={classes.smallTitle}>Tourism</small>
+                                    <small className={classes.smallTitle}>Tourisme</small>
                                 </h4>
                             </Card>
                         </Grid>
@@ -92,7 +92,7 @@ export default function TeamSection() {
                                 <h4 className={classes.cardTitle}>
                                     Thomas Berger
                                     <br/>
-                                    <small className={classes.smallTitle}>Ingenieur</small>
+                                    <small className={classes.smallTitle}>Ingénieur</small>
                                 </h4>
                             </Card>
                         </Grid>

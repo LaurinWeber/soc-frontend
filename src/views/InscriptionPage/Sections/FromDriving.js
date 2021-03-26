@@ -1,7 +1,6 @@
 import React from 'react'
 import Textfield from "@material-ui/core/TextField";
 import {makeStyles} from "@material-ui/core/styles";
-import {number} from "prop-types";
 
 const useStyles = makeStyles({
     main: {
@@ -23,21 +22,15 @@ export default function FormDriving(props) {
             <div className={classes.main} align={'center'}>
                 <Textfield
                     label="Région"
-                    placeholder="'Base Valais'"
+                    placeholder="Bas Valais"
                     onChange={handleChange("region")}
                     defaultValue={values.region}
                 />
                 <br/>
                 <Textfield
-                    label="Km/semaine"
+                    label="Km / Semaine"
                     onChange={handleChange("kmPerWeek")}
                     defaultValue={values.kmPerWeek}
-                />
-                <br/>
-                <Textfield
-                    label="nombre d'année tu conduis"
-                    onChange={handleChange("experience")}
-                    defaultValue={values.experience}
                 />
                 <br/>
             </div>

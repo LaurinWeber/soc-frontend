@@ -1,4 +1,4 @@
-import {grayColor, primaryColor, title} from "../../mainStyles";
+import {grayColor,  title} from "../../mainStyles";
 
 
 const contactStyle = {
