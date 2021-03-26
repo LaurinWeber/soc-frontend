@@ -27,7 +27,7 @@ const useStyles = makeStyles({
     }
 )
 
-export default function (props) {
+export default function HeaderTop(props) {
     const {goToHome, inscription, showButton, label} = props;
     const classes = useStyles();
 

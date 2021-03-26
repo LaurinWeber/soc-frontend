@@ -20,6 +20,7 @@ import HeaderTop from "./InscriptionPage/HeaderTop";
 
 const useStyles = makeStyles(styles);
 
+
 export default function LandingPage(props) {
     //hooks
     const classes = useStyles();
