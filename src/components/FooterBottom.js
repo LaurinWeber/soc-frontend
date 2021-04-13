@@ -1,7 +1,7 @@
 import React from "react";
 import {makeStyles} from "@material-ui/styles";
-import {primaryColor} from "../../assets/jss/mainStyles";
-import logo from "../../assets/img/logo-hes-so-valais-2019.png";
+import {primaryColor} from "../assets/jss/mainStyles";
+import logo from "../assets/img/logo-hes-so-valais-2019.png";
 
 const useStyles = makeStyles({
     root: {

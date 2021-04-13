@@ -9,18 +9,13 @@ import CardHeader from "../../../components/CardHeader";
 import CardBody from "../../../components/CardBody";
 import Button from "../../../components/Button.js";
 import {Grid, Typography} from "@material-ui/core";
+import {useHistory} from "react-router-dom";
 
 const useStyles = makeStyles(styles);
 
 export default function RoleSection(props) {
+    const {handleInscription, handleDetails} = props;
     const classes = useStyles();
-    const {handleInscription} = props;
-
-
-    //redirect to details about soc for companies
-    const handleDetails = async (event) => {
-
-    };
 
     return (
         <div className={classes.section}>
@@ -66,7 +61,7 @@ export default function RoleSection(props) {
                                     sommes là pour vous aider avec des campagnes adaptées à VOS
                                     besoins. besoins.
                                 </p>
-                                <Button disabled onClick={handleDetails}>
+                                <Button onClick={handleDetails}>
                                     Details
                                 </Button>
                             </CardBody>

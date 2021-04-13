@@ -1,7 +1,7 @@
 import {AppBar, Toolbar, Typography} from "@material-ui/core";
-import Button from "../../components/Button";
+import Button from "./Button";
 import {makeStyles} from "@material-ui/styles";
-import logo from "../../assets/img/logo-soc.png";
+import logo from "../assets/img/logo-soc.png";
 import React from "react";
 
 const useStyles = makeStyles({

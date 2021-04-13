@@ -15,8 +15,8 @@ import Button from "../components/Button";
 
 //hooks
 import {useHistory} from "react-router-dom";
-import FooterBottom from "./InscriptionPage/FooterBottom";
-import HeaderTop from "./InscriptionPage/HeaderTop";
+import FooterBottom from "../components/FooterBottom";
+import HeaderTop from "../components/HeaderTop";
 
 const useStyles = makeStyles(styles);
 
@@ -29,6 +29,12 @@ export default function LandingPage(props) {
     //redirect to driver inscription
     const handleInscription = () => {
         let path = `inscription`;
+        history.push(path);
+    };
+
+    //redirect to company details
+    const handleDetails = () => {
+        let path = `details`;
         history.push(path);
     };
 
@@ -60,7 +66,9 @@ export default function LandingPage(props) {
                 <Grid className={classes.grid} container>
                     <Grid item xs={12} sm={12} md={12}>
                         <ProductSection/>
-                        <RoleSection handleInscription={handleInscription}/>
+                        <RoleSection
+                            handleInscription={handleInscription}
+                            handleDetails={handleDetails}/>
                         <TeamSection/>
                         <ContactSection/>
                     </Grid>
